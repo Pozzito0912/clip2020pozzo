@@ -7,7 +7,7 @@
     <title> Copa Libertadores 2018 </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <header>
     <hgroup>
@@ -24,14 +24,17 @@
                     <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</li></a>
                 </div>
                 <div class="container-sm p-1 my-3 bg-dark text-white border align-middle" id="navbar-equipos">
-                    <li class="nav-item"><a class="nav-link text-white" href="equipos.html">Equipos</li></a>
+                    <li class="nav-item"><a class="nav-link text-white" href="secciones/equipos.html">Equipos</li></a>
                 </div>
                 <div class="container-sm p-1 my-3 bg-dark text-white border align-middle" id="navbar-partidos">
-                    <li class="nav-item"><a class="nav-link text-white" href="partidos.html">Partidos</li></a>
+                    <li class="nav-item"><a class="nav-link text-white" href="secciones/partidos.html">Partidos</li></a>
                 </div>
-                <div class="container-sm p-1 my-3 bg-dark text-white border align-middle" id="navbar-partidos">
-                    <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</li></a>
+                <div class="container-sm p-1 my-3 bg-dark text-white border align-middle" id="navbar-contacto">
+                    <li class="nav-item"><a class="nav-link text-white" href="secciones/contacto.html">Contacto</li></a>
                 </div>
+                <div class="container-sm p-1 my-3 bg-dark text-white border align-middle" id="navbar-adivinanza">
+                    <li class="nav-item"><a class="nav-link text-white" href=""onclick="adivinanza()">Adivinanza</a></li>
+                </div>    
             </ul>
         </div>
     </nav>
@@ -50,6 +53,7 @@
     <hr>
     <div>
         <section>
+            <p class="align-middle"> <button onclick=adivinanza()>Juguemos</button></p>
             <p>Los futboleros seremos testigos de una final inédita, primera en su historia entre dos clásicos rivales
                 de toda la vida del fútbol argentino: River Plate y Boca Juniors.
                 Ambos serán protagonistas de una final que tendrá en vilo a todo el país, y que se verá desde todo el
@@ -90,8 +94,8 @@
                 <div class="container.fluid" id="barrafooter">
                     <div class="row">
                         <div class="col align-middle"><button><a href="index.html">Home</a></button></div>
-                        <div class="col align-middle bg-danger"><a href="equipos.html">Equipos</a></div>
-                        <div class="col align-middle border "><a href="partidos.html">Partidos</a></div>
+                        <div class="col align-middle bg-danger"><a href="secciones/equipos.html">Equipos</a></div>
+                        <div class="col align-middle border "><a href="secciones/partidos.html">Partidos</a></div>
                     </div>
                 </div>
                 <div class="container.fluid"><p style="text-align: center; color: white;"> Tomás Pozzo @CLIP2020</p></div>
@@ -102,6 +106,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="adivinanza.js"></script>
 </body>
 </html>
 
